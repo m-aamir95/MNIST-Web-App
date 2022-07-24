@@ -28,16 +28,21 @@ reset_btn.addEventListener("click", () => {
 
 pen.addEventListener("click", () => {
     pen.style = "background-color: green; color:white";
-    isDrawing = true;
 });
 
 
 
 canvas.addEventListener("click", () => {
     console.log("Kclick");
+    isDrawing = true;
 })
 
 canvas.addEventListener("mousedown", () => {
     console.log("clicking");
+    isDrawing = false;
 });
 
+
+canvas.addEventListener("mousemove", () => {
+    console.log("Mouse moving");
+})
