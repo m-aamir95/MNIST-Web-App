@@ -1,7 +1,9 @@
 let root = document.getElementById("root");
+
 let reset_btn = document.getElementById("reset_btn");
 let pen_btn = document.getElementById("pen");
 let eraser_btn = document.getElementById("eraser");
+let send_btn = document.getElementById("send");
 
 let isMousePressed = false;
 let isEraser = false;
@@ -22,6 +24,8 @@ let ctx = canvas.getContext("2d");
 //Add background color
 ctx.fillStyle = "black";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+//Html button event listeners
 
 reset_btn.addEventListener("click", () => {
     ctx.fillStyle = "black";
@@ -50,6 +54,24 @@ eraser_btn.addEventListener('click', () => {
 
     pen_btn.style = "background-color: brown; color:white";
 });
+
+send_btn.addEventListener("click", () => {
+    
+    const canvas_data = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    console.log(canvas_data);
+});
+//#############################
+
+
+
+
+
+
+
+
+
+
+
 
 
 

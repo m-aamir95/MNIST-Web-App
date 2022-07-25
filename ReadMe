@@ -1,0 +1,9 @@
+1) Drawing needs improvments; points/strokes needs to be joined together
+
+2) Fix buttons; handle the color functionality
+
+3) Fix buttons; Disable all buttons when send button is clicked.
+
+4) Add textboxes to display the result of the model and confidence.
+
+5) Improve the UI of the app with the help of Zubaire.
