@@ -32,17 +32,26 @@ pen.addEventListener("click", () => {
 
 
 
+//Is fired when click is lifted
 canvas.addEventListener("click", () => {
-    console.log("Kclick");
-    isDrawing = true;
+    isDrawing = false;
 })
 
+//Is fired when the click is pressed
 canvas.addEventListener("mousedown", () => {
-    console.log("clicking");
-    isDrawing = false;
+    isDrawing = true;
 });
 
+//Is fired when mouse moves
+canvas.addEventListener("mousemove", (evt) => {
+    
+    if (isDrawing) {
+        const x = evt.clientX;
+        const y = evt.clientY;
+        
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = 6;
+        ctx.strokeRect(x, y, 1, 1);
+    }
 
-canvas.addEventListener("mousemove", () => {
-    console.log("Mouse moving");
 })
