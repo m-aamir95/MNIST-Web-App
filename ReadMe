@@ -1,4 +1,4 @@
-# TODO List Frontend
+# TODO Frontend
 
 - [ ] Drawing needs improvments; points/strokes needs to be joined together
 
@@ -10,7 +10,7 @@
 
 - [ ] Improve the UI of the app with the help of Zubaire.
 
-# TODO List Backend
+# TODO Backend
 
 - [ ] Implement a Flask based API.
     - [ ] Should be able to receive canvas data.
