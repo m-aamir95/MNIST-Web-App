@@ -1,9 +1,23 @@
-1) Drawing needs improvments; points/strokes needs to be joined together
+# TODO List Frontend
 
-2) Fix buttons; handle the color functionality
+- [ ] Drawing needs improvments; points/strokes needs to be joined together
 
-3) Fix buttons; Disable all buttons when send button is clicked.
+- [ ] Fix buttons; handle the color functionality when certain buttons are clicked.
 
-4) Add textboxes to display the result of the model and confidence.
+- [ ] Fix buttons; Disable all buttons when send button is clicked, and display appropriate waiting message.
 
-5) Improve the UI of the app with the help of Zubaire.
+- [ ] Add textboxes to display the result of the model as well as confidence score.
+
+- [ ] Improve the UI of the app with the help of Zubaire.
+
+# TODO List Backend
+
+- [ ] Implement a Flask based API.
+    - [ ] Should be able to receive canvas data.
+    - [ ] Make inferences from trained model.
+    - [ ] Generate a response for the frontend client.
+
+# TODO MNIST model training.
+
+- [ ] Pytorch based MNIST classifier model, either trained or pretrained.
+- [ ] Model should be able to handle digits with varying stroke size.
