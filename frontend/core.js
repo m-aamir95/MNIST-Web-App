@@ -89,7 +89,8 @@ async function sendDataToBackend(data_to_send) {
                                 method: "POST",
                                 body: JSON.stringify(data_to_send),
                                 headers: {
-                                    "Content-Type" : "application/json"
+                                    "Content-Type": "application/json",
+                                    "Accept": "application/json"
                                 }
                             }
                             );

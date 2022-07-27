@@ -13,7 +13,7 @@
 # TODO Backend
 
 - [ ] Implement a Flask based API.
-    - [ ] Should be able to receive canvas data.
+    - [x] Should be able to receive canvas data.
     - [ ] Make inferences from trained model.
     - [ ] Generate a response for the frontend client.
 
