@@ -72,9 +72,6 @@ send_btn.addEventListener("click", () => {
         canvas_grayscale_data.push(avg_color);
     }
 
-    console.log(canvas_data.data);
-    console.log(canvas_grayscale_data);
-
 });
 //#############################
 
