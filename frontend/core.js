@@ -72,11 +72,28 @@ send_btn.addEventListener("click", () => {
         canvas_grayscale_data.push(avg_color);
     }
 
+
+    let data_to_send = { "mnist_data": canvas_grayscale_data };
+
+    sendDataToBackend(canvas_grayscale_data);
+
 });
 //#############################
 
 
-//SRGB
+async function sendDataToBackend(data_to_send) {
+    
+    
+    const resp = await fetch("http://localhost:5000/inference",
+                            {
+                                method: "POST",
+                                body: JSON.stringify(data_to_send),
+                                headers: {
+                                    "Content-Type" : "application/json"
+                                }
+                            }
+                            );
+}
 
 
 
