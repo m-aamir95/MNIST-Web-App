@@ -58,10 +58,28 @@ eraser_btn.addEventListener('click', () => {
 send_btn.addEventListener("click", () => {
     
     const canvas_data = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    console.log(canvas_data);
+
+    const canvas_grayscale_data = [];
+    for (let i = 0; i < canvas_data.data.length; i += 4){
+        
+
+        //Extracting different channels of the pixel
+        const r = canvas_data.data[i];
+        const g = canvas_data.data[i + 1];
+        const b = canvas_data.data[i + 2];
+        
+        const avg_color = (r + g + b) / 3;
+        canvas_grayscale_data.push(avg_color);
+    }
+
+    console.log(canvas_data.data);
+    console.log(canvas_grayscale_data);
+
 });
 //#############################
 
+
+//SRGB
 
 
 
